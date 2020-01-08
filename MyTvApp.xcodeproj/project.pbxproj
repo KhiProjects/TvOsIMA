@@ -13,6 +13,8 @@
 		3758AB1823C61E0200336944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3758AB1723C61E0200336944 /* Assets.xcassets */; };
 		3758AB2323C61E0200336944 /* MyTvAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758AB2223C61E0200336944 /* MyTvAppTests.swift */; };
 		3758AB2E23C61E0200336944 /* MyTvAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758AB2D23C61E0200336944 /* MyTvAppUITests.swift */; };
+		37A00ECC23C6229700991AE1 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A00ECB23C6229700991AE1 /* VideoDetailViewController.swift */; };
+		37A00ECE23C6231B00991AE1 /* IMAVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A00ECD23C6231B00991AE1 /* IMAVideoPlayerViewController.swift */; };
 		D72FAE16D32FF3AE295A02EC /* Pods_MyTvApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153EEE146C2689DDB151E9E2 /* Pods_MyTvApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		3758AB2923C61E0200336944 /* MyTvAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTvAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3758AB2D23C61E0200336944 /* MyTvAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTvAppUITests.swift; sourceTree = "<group>"; };
 		3758AB2F23C61E0200336944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A00ECB23C6229700991AE1 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
+		37A00ECD23C6231B00991AE1 /* IMAVideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMAVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		7D61AA2C6EB7F75974DA0660 /* Pods-MyTvApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTvApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTvApp/Pods-MyTvApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,7 @@
 		3758AB0F23C61E0000336944 /* MyTvApp */ = {
 			isa = PBXGroup;
 			children = (
+				37A00ECA23C6229700991AE1 /* VideoDetail */,
 				3758AB1023C61E0000336944 /* AppDelegate.swift */,
 				3758AB1223C61E0000336944 /* ViewController.swift */,
 				3758AB1423C61E0000336944 /* Main.storyboard */,
@@ -127,6 +132,15 @@
 				3758AB2F23C61E0200336944 /* Info.plist */,
 			);
 			path = MyTvAppUITests;
+			sourceTree = "<group>";
+		};
+		37A00ECA23C6229700991AE1 /* VideoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				37A00ECD23C6231B00991AE1 /* IMAVideoPlayerViewController.swift */,
+				37A00ECB23C6229700991AE1 /* VideoDetailViewController.swift */,
+			);
+			path = VideoDetail;
 			sourceTree = "<group>";
 		};
 		A83DEB9EF5DA2450E3AA175B /* Frameworks */ = {
@@ -318,7 +332,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3758AB1323C61E0000336944 /* ViewController.swift in Sources */,
+				37A00ECC23C6229700991AE1 /* VideoDetailViewController.swift in Sources */,
 				3758AB1123C61E0000336944 /* AppDelegate.swift in Sources */,
+				37A00ECE23C6231B00991AE1 /* IMAVideoPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +504,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53BS299VY5;
 				INFOPLIST_FILE = MyTvApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -506,7 +525,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53BS299VY5;
 				INFOPLIST_FILE = MyTvApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -522,7 +544,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTvAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -538,7 +564,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTvAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -553,7 +583,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTvAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -568,7 +602,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTvAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KhiProjects.MyTvAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
